@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENVIE DE S'EVADER</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 50%;
+            margin: 50px auto;
+            background-color: #59c0eb;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #e07a7a;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #de933d;
+            color: #f5eded;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #6984f1;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>ENVIE DE S'EVADER</h2>
+    <form action="votre_script_de_traitement.php" method="post">
+        <label for="nom">Nom complet :</label>
+        <input type="text" id="nom" name="nom" required>
+
+        <label for="email">Adresse e-mail :</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="tel">Numéro de téléphone :</label>
+        <input type="tel" id="tel" name="tel" required>
+
+        <label for="date_depart">Date de départ souhaitée :</label>
+        <input type="date" id="date_depart" name="date_depart" required>
+
+        <label for="duree">Durée du voyage envisagée :</label>
+        <input type="text" id="duree" name="duree">
+
+        <label for="destination">Destination souhaitée :</label>
+        <input type="text" id="destination" name="destination" required>
+
+        <label for="budget">Budget approximatif :</label>
+        <input type="text" id="budget" name="budget">
+
+        <label for="commentaires">Commentaires supplémentaires :</label>
+        <textarea id="commentaires" name="commentaires"></textarea>
+
+        <input type="submit" value="Envoyer">
+    </form>
+</div>
+
+</body>
+</html>

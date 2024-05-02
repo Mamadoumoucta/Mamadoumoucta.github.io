@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Réservation de voyage en famille</title>
+  <link rel="stylesheet" href="f.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Réservation de voyage en famille</h1>
+    <form id="booking-form">
+      <fieldset>
+        <legend>Informations du voyageur principal (responsable)</legend>
+        <div class="form-group">
+          <label for="main-name">Nom :</label>
+          <input type="text" id="main-name" placeholder="Nom" required>
+        </div>
+        <div class="form-group">
+          <label for="main-email">Email :</label>
+          <input type="email" id="main-email" placeholder="Email" required>
+        </div>
+      </fieldset>
+      <fieldset id="family-members">
+        <legend>Informations des membres de la famille</legend>
+        <!-- Les informations des membres de la famille seront ajoutées ici dynamiquement -->
+      </fieldset>
+      <button type="button" id="add-member">Ajouter membre</button>
+      <button type="submit">Réserver</button>
+    </form>
+    <div id="confirmation"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
